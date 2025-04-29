@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/mwa/ros2_ws/install/turtlebot4_node/include/**",
+        "/home/mwa/ros2_ws/install/turtlebot4_msgs/include/**",
+        "/home/mwa/ros2_ws/install/my_interfaces_pkg/include/**",
+        "/home/mwa/erc25_ws/install/wiimote_msgs/include/**",
+        "/home/mwa/erc25_ws/install/joy/include/**",
+        "/home/mwa/erc25_ws/install/rovers_interfaces/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/mwa/ros2_ws/src/my_interfaces_pkg/include/**",
+        "/home/mwa/ros2_ws/src/turtlebot4/turtlebot4_node/include/**",
+        "/home/mwa/ros2_ws/src/turtlebot4_simulator/turtlebot4_gz_toolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
