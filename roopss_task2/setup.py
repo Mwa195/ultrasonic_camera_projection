@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'visualization = roopss_task2.visualization:main',
             'sensor_data_collector = roopss_task2.sensor_data_collector:main',
+            'yolo_checker = roopss_task2.yolo_checker:main',
         ],
     },
 )

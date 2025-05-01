@@ -40,7 +40,7 @@ class SensorDataCollector(Node):
             # Start serial communication
             self.ser = serial.Serial(target_port, 9600)
             # Loop the main function
-            self.timer = self.create_timer(0.000104, self.getSensorData)
+            self.timer = self.create_timer(0.05, self.getSensorData)
         else:
             print(f"{target_port} not found. Available ports: {available_ports}")
             rclpy.shutdown()
@@ -57,7 +57,7 @@ class SensorDataCollector(Node):
                 line = self.ser.readline().decode('utf-8').strip()
                 if line:
                     angleStr, distStr = line.split(",")
-                    servo_angle = int(angleStr)  # Servo angle (30 to 150)
+                    servo_angle = int(angleStr)
                     distance = float(distStr)
                     # Convert servo angle to relative angle (-60 to 60)
                     relative_angle = servo_angle - 90  # 90 degrees is the center (0 degrees)
